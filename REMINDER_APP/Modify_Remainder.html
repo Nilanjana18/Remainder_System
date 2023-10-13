@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modify Reminder</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 300px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="container">
+        <h1>Modify Reminder</h1>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date">
+        <br>
+        <label for="reminderDetails">Reminder Details:</label>
+        <textarea id="reminderDetails"></textarea>
+        <br>
+        <button id="populate">Populate Fields</button>
+        <button id="save">Save</button>
+    </div>
+</body>
+</html>

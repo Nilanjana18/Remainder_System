@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <style>
+                body {
+                        background-image: url(pexels-steve-3789885.jpg);
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: 200;
+                      }
+
+                      .signup-box {
+                        width: 360px;
+                        height: 620px;
+                        margin: auto;
+                        background-color: #ffc6b3;
+                        border-radius: 3px;
+                        align-items: center;
+                        align-content: center;
+                        justify-content: center;
+                      }
+                      
+                      h1 {
+                        text-align: center;
+                        padding-top: 15px;
+                        color: rgb(4, 4, 4);
+                      }
+                      
+                      h4 {
+                        text-align: center;
+                        color: rgb(6, 6, 6);
+                      }
+                      
+                      form {
+                        width: 300px;
+                        margin-left: 20px;
+                      }
+                      
+                      form label {
+                        display: flex;
+                        margin-top: 20px;
+                        font-size: 18px;
+                      }
+                      
+                      form input {
+                        width: 100%;
+                        padding: 7px;
+                        border: none;
+                        border: 1px solid gray;
+                        border-radius: 6px;
+                        outline: none;
+                      }
+                      .btn{
+                        width: 320px;
+                        height: 35px;
+                        margin-top: 20px;
+                        border: none;
+                        background-color: #6981c9;
+                        color: white;
+                        font-size: 18px;
+                      }
+
+                      button:hover{
+                        background-color: #33cc33;
+                      }
+
+                      p {
+                        text-align: center;
+                        padding-top: 20px;
+                        font-size: 18px;
+                        color: white;
+                      }           
+                      
+        </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h1>Sign Up</h1>
+    <h4>Welcome!</h4>
+    <form action="" method="GET">
+      <label>First Name</label>
+      <input type="text" id="firstname" placeholder="" / required>
+      <label>Last Name</label>
+      <input type="text" id="lastname" placeholder="" / required>
+      <label>Email</label>
+      <input type="email" id="email" placeholder="" / required>
+      <label>Password</label>
+      <input type="password" id="pswd" placeholder="" / required>
+      <label>Confirm Password</label>
+      <input type="password" id="confirmpswd" placeholder="" / required>
+      <button class="btn" onclick="window.location.href=home.html">Submit</button>
+    </form>
+  </div> 
+  <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+  </p>  
+  <script>
+    var form = document.getElementById('form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var firstname = document.getElementById('firstname').value;
+        var lastname = document.getElementById('lastname').value;
+        var email = document.getElementById('email').value;
+        var pswd = document.getElementById('pswd').value;
+        var confirmpswd = document.getElementById('confirmpswd').value;
+
+        console.log('First Name:', firstname);
+        console.log('Last Name:', lastname);
+        console.log('Email:', email);
+        console.log('Password:', pswd);
+        console.log('Confirm Password:', confirmpswd);
+    });
+</script>           
+</body>
+</html>

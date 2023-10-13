@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+                margin: 0;
+                padding: 0;
+                background:linear-gradient(120deg, rgb(171, 171, 196),rgb(204, 175, 175) );
+                height: 100vh;
+            }
+            .header{
+                text-align: center;
+                padding: 10px;
+            }
+            .body{
+                text-align: center;
+            }
+            .label{
+                margin-right: 100px;
+            }
+            .input{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            a{
+                padding-top: 0px;
+                padding-left: 200
+            
+
+            }
+            button{
+                border-radius: 10%;
+                color: bisque;
+                background-color: rgb(48, 166, 201);
+                margin-right: 80px;
+                display:block;
+                margin-left: 650px;
+            }
+            .details{
+                min-width: 100px;
+                padding: 2px;
+            }
+            .details1
+            {
+                padding: 2px;
+            }
+            .select{
+                padding: 2px;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">DISABLE REMAINDER</div>
+
+    <div class="body">
+        <form action="api\setreminder.php" method="POST">
+        <div class="details"><label for="cars">SUBJECT:</label></div>
+<div class="select">
+<select name="subject" id="s1">
+  <option value="">Important</option>
+  <option value="call">Call</option>
+  <option value="dates">Birthdays</option>
+  <option value="task">Tasks</option>
+</select></div>
+        <input type="date" name="date">
+        <div class="details">
+            <label for="">Description</label></div>
+
+            <div class="details1">
+            <input type="text" name="description">
+        </div>
+        <div class="details">
+            <label for="">Email</label></div>
+            <div class="details1">
+            <input type="text" name="email">
+        </div>
+        <div class="details">
+            <label for="">Contact no.</label></div>
+            <div class="details1">
+            <input type="text" name="phone">
+        </div>
+        <div class="details">
+            <label for="">Sms no.</label></div>
+            <div class="details1">
+            <input type="text" name="sms">
+        </div>
+        
+        <div class="details">
+            <label for="">Enter your remainder</label></div>
+            <div class="details1">
+            <input type="text" name="details">
+        </div>
+        <div>
+        <form>
+            <input type="button" name="Save" value="save">
+        </form>
+    </div>
+        <a href="logout.html" class="logout-button">Logout</a>
+    </form>
+</body>
+</html>
